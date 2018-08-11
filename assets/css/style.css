@@ -1,0 +1,19 @@
+.header {
+    background-color: #d55;
+    
+}
+
+.gameScreen {
+    background-color: #d55;
+    margin-top: 20px;
+    padding: 20px;
+
+}
+
+.imageStyles {
+    max-height:300px;
+}
+
+.hidden {
+    display: none;
+}

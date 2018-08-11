@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+
+</head>
+
+<body>
+
+    <!--Header-->
+    <div class="header fixed-top container">
+        <div>
+            <h1>Bulls Trivia</h1>
+            <h6>By: Joe Plukarski</h6>
+        </div>
+    </div>
+
+    <!--Start Menu-->
+    <div class="gameScreen container" data-state="shown">
+        <img src="assets/images/Bulls.jpeg" class="imageStyles col">
+        <div class="col">
+            <p>How big of a fan are you? Click the start button to test your knowledge of your favorite team.</p>
+        </div>
+        <button class="col startButton">Start</button>
+    </div>
+
+    <!--First Question-->
+    <div class="gameScreen container hidden" id="question1" data-state="hidden">
+        <img src="assets/images/Bulls.jpeg" class="imageStyles col">
+        <div class="col">
+            <p>What is the answer to question 1?</p>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+                Correct answer
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+                Incorrect answer
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" checked>
+            <label class="form-check-label" for="exampleRadios3">
+                Incorrect answer 2
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+            <label class="form-check-label" for="exampleRadios4">
+                Incorrect answer 3
+            </label>
+        </div>
+        <button class="col" id="submitFirstAnswer">Next</button>
+    </div>
+
+    <!--Second Question-->
+    <div class="gameScreen container hidden" id="question2" data-state="hidden">
+        <img src="assets/images/Bulls.jpeg" class="imageStyles col">
+        <div class="col">
+            <p>What is the answer to question 2??</p>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5" checked>
+            <label class="form-check-label" for="exampleRadios5">
+                Correct answer Number 2
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios6" value="option6">
+            <label class="form-check-label" for="exampleRadios6">
+                Incorrect answer
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios7" value="option7" checked>
+            <label class="form-check-label" for="exampleRadios7">
+                Incorrect answer 2
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios8" value="option8">
+            <label class="form-check-label" for="exampleRadios8">
+                Incorrect answer 3
+            </label>
+        </div>
+        <button class="col" id="submitSecondAnswer">Next</button>
+    </div>
+
+    <!--Third Question-->
+    <div class="gameScreen container hidden" id="question3" data-state="hidden">
+        <img src="assets/images/Bulls.jpeg" class="imageStyles col">
+        <div class="col">
+            <p>What is the answer to question 3??</p>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios9" value="option9" checked>
+            <label class="form-check-label" for="exampleRadios9">
+                Correct answer Number 3
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios10" value="option10">
+            <label class="form-check-label" for="exampleRadios10">
+                Incorrect answer
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios11" value="option11" checked>
+            <label class="form-check-label" for="exampleRadios11">
+                Incorrect answer 2
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios12" value="option12">
+            <label class="form-check-label" for="exampleRadios12">
+                Incorrect answer 3
+            </label>
+        </div>
+        <button class="col" id="submitThirdAnswer">Next</button>
+    </div>
+
+    <!--Fourth Question-->
+    <div class="gameScreen container hidden" id="question4" data-state="hidden">
+        <img src="assets/images/Bulls.jpeg" class="imageStyles col">
+        <div class="col">
+            <p>What is the answer to question 4??</p>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios13" value="option13" checked>
+            <label class="form-check-label" for="exampleRadios13">
+                Correct answer Number 4
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios14" value="option14">
+            <label class="form-check-label" for="exampleRadios14">
+                Incorrect answer
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios15" value="option15" checked>
+            <label class="form-check-label" for="exampleRadios15">
+                Incorrect answer 2
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios16" value="option16">
+            <label class="form-check-label" for="exampleRadios16">
+                Incorrect answer 3
+            </label>
+        </div>
+        <button class="col" id="submitFourthAnswer">Next</button>
+    </div>
+
+    <!--Fifth Question-->
+    <div class="gameScreen container hidden" id="question5" data-state="hidden">
+        <img src="assets/images/Bulls.jpeg" class="imageStyles col">
+        <div class="col">
+            <p>What is the answer to question 5??</p>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios17" value="option17" checked>
+            <label class="form-check-label" for="exampleRadios17">
+                Correct answer Number 5
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios18" value="option18">
+            <label class="form-check-label" for="exampleRadios18">
+                Incorrect answer
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios19" value="option19" checked>
+            <label class="form-check-label" for="exampleRadios19">
+                Incorrect answer 2
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios20" value="option20">
+            <label class="form-check-label" for="exampleRadios20">
+                Incorrect answer 3
+            </label>
+        </div>
+        <button class="col" id="submitFifthAnswer">Next</button>
+    </div>
+
+    <!--Jquery and Javascript links:-->
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
+        crossorigin='anonymous'></script>
+    <script src="./assets/javascript/app.js"></script>
+</body>
+
+</html>
