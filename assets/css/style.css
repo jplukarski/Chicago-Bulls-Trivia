@@ -17,3 +17,8 @@
 .hidden {
     display: none;
 }
+
+#sixChampionships {
+    height: 50%;
+    width:50%;
+}

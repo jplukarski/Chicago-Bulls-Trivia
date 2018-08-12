@@ -33,167 +33,369 @@
 
     <!--First Question-->
     <div class="gameScreen container hidden" id="question1" data-state="hidden">
-        <img src="assets/images/Bulls.jpeg" class="imageStyles col">
+        <img src="assets/images/23.jpeg" class="imageStyles col">
+        <div>Time Remaining: </div>
+        <div id="firstQuestionTimeRemaining">15</div>
         <div class="col">
-            <p>What is the answer to question 1?</p>
+            <h4>For whom is the number 23 retired?</h4>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <input class="form-check-input" type="radio" name="firstAnswerGroup" id="exampleRadios1" value="Michael Jordan" checked>
             <label class="form-check-label" for="exampleRadios1">
-                Correct answer
+                Michael Jordan
             </label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <input class="form-check-input" type="radio" name="firstAnswerGroup" id="exampleRadios2" value="Derrick Rose">
             <label class="form-check-label" for="exampleRadios2">
-                Incorrect answer
+                Derrick Rose
             </label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" checked>
+            <input class="form-check-input" type="radio" name="firstAnswerGroup" id="exampleRadios3" value="Joakim Noah" checked>
             <label class="form-check-label" for="exampleRadios3">
-                Incorrect answer 2
+                Joakim Noah
             </label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+            <input class="form-check-input" type="radio" name="firstAnswerGroup" id="exampleRadios4" value="Larry Bird">
             <label class="form-check-label" for="exampleRadios4">
-                Incorrect answer 3
+                Larry Bird
             </label>
         </div>
         <button class="col" id="submitFirstAnswer">Next</button>
     </div>
 
+    <!--First Question Correct Screen-->
+    <div class="gameScreen container hidden" id="questionOneCorrect" data-state="hidden">
+        <img src="https://media.giphy.com/media/rhpfWqKiuJft6/giphy.gif">
+        <div> Of course it was Michael Jordan!</div>
+        <button class="col goToSecondQuestion">Next</button>
+    </div>
+
+    <!--First Question Incorrect Screen-->
+    <div class="gameScreen container hidden" id="questionOneIncorrect" data-state="hidden">
+        <img src="./assets/images/cryingjordan.jpeg">
+        <div>That is incorrect! The correct answer is: Michael Jordan</div>
+        <div id="firstCorrectAnswer"></div>
+        <button class="col goToSecondQuestion">Next</button>
+    </div>
+
     <!--Second Question-->
     <div class="gameScreen container hidden" id="question2" data-state="hidden">
-        <img src="assets/images/Bulls.jpeg" class="imageStyles col">
+        <img src="assets/images/bullswinningtheship.jpeg" class="imageStyles col">
+        <div>Time Remaining: </div>
+        <div id="secondQuestionTimeRemaining">15</div>
         <div class="col">
-            <p>What is the answer to question 2??</p>
+            <h4>How many Championships did the Bulls win in the 90s?</h4>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5" checked>
+            <input class="form-check-input" type="radio" name="SecondAnswerGroup" id="exampleRadios5" value="All of the Championships!"
+                checked>
             <label class="form-check-label" for="exampleRadios5">
-                Correct answer Number 2
+                All of the Championships!
             </label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios6" value="option6">
+            <input class="form-check-input" type="radio" name="SecondAnswerGroup" id="exampleRadios6" value="Six">
             <label class="form-check-label" for="exampleRadios6">
-                Incorrect answer
+                Six
             </label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios7" value="option7" checked>
+            <input class="form-check-input" type="radio" name="SecondAnswerGroup" id="exampleRadios7" value="Eight" checked>
             <label class="form-check-label" for="exampleRadios7">
-                Incorrect answer 2
+                Eight
             </label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios8" value="option8">
+            <input class="form-check-input" type="radio" name="SecondAnswerGroup" id="exampleRadios8" value="A Three-peat">
             <label class="form-check-label" for="exampleRadios8">
-                Incorrect answer 3
+                A Three-peat
             </label>
         </div>
         <button class="col" id="submitSecondAnswer">Next</button>
     </div>
 
+    <!--Second Question Correct Screen-->
+    <div class="gameScreen container hidden" id="questionTwoCorrect" data-state="hidden">
+        <img id="sixChampionships" src="assets/images/6champs.jpeg">
+        <div>The Bulls three-peated twice during the 90s, bringing their total for the decade to Six.</div>
+        <button class="col goToThirdQuestion">Next</button>
+    </div>
+
+    <!--Second Question Incorrect Screen-->
+    <div class="gameScreen container hidden" id="questionTwoIncorrect" data-state="hidden">
+        <img src="./assets/images/cryingjordan.jpeg">
+        <div>That is incorrect! The correct answer is: Six</div>
+        <button class="col goToThirdQuestion">Next</button>
+    </div>
+
     <!--Third Question-->
     <div class="gameScreen container hidden" id="question3" data-state="hidden">
-        <img src="assets/images/Bulls.jpeg" class="imageStyles col">
+        <img src="assets/images/derrickroseasg.jpeg" class="imageStyles col">
+        <div>Time Remaining: </div>
+        <div id="thirdQuestionTimeRemaining">15</div>
         <div class="col">
-            <p>What is the answer to question 3??</p>
+            <h4>Who was the last Bulls player to make an Allstar game?</h4>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios9" value="option9" checked>
+            <input class="form-check-input" type="radio" name="thirdAnswerGroup" id="exampleRadios9" value="Lauri Markkenen" checked>
             <label class="form-check-label" for="exampleRadios9">
-                Correct answer Number 3
+                Lauri Markkenen
             </label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios10" value="option10">
+            <input class="form-check-input" type="radio" name="thirdAnswerGroup" id="exampleRadios10" value="Pau Gasol">
             <label class="form-check-label" for="exampleRadios10">
-                Incorrect answer
+                Pau Gasol
             </label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios11" value="option11" checked>
+            <input class="form-check-input" type="radio" name="thirdAnswerGroup" id="exampleRadios11" value="Jimmy Butler" checked>
             <label class="form-check-label" for="exampleRadios11">
-                Incorrect answer 2
+                Jimmy Butler
             </label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios12" value="option12">
+            <input class="form-check-input" type="radio" name="thirdAnswerGroup" id="exampleRadios12" value="Luol Deng">
             <label class="form-check-label" for="exampleRadios12">
-                Incorrect answer 3
+                Luol Deng
             </label>
         </div>
         <button class="col" id="submitThirdAnswer">Next</button>
     </div>
 
+    <!--Third Question Correct Screen-->
+    <div class="gameScreen container hidden" id="questionThreeCorrect" data-state="hidden">
+        <a href='http://www.gifbin.com/987481' title='Funny Gifs'>
+            <img src='http://www.gifbin.com/bin/022013/1367338010_jimmy_butler__deal_with_it.gif'>
+        </a>
+        <div>Jimmy Butler was the last Bull to make an All-Star game. He did so in 2017</div>
+        <button class="col goToFourthQuestion">Next</button>
+    </div>
+
+    <!--Third Question Incorrect Screen-->
+    <div class="gameScreen container hidden" id="questionThreeIncorrect" data-state="hidden">
+        <img src="./assets/images/cryingjordan.jpeg">
+        <div> That is incorrect! The correct answer is: Jimmy Butler</div>
+        <button class="col goToFourthQuestion">Next</button>
+    </div>
+
     <!--Fourth Question-->
     <div class="gameScreen container hidden" id="question4" data-state="hidden">
-        <img src="assets/images/Bulls.jpeg" class="imageStyles col">
+        <img src="assets/images/korver.jpeg" class="imageStyles col">
+        <div>Time Remaining: </div>
+        <div id="fourthQuestionTimeRemaining">15</div>
         <div class="col">
-            <p>What is the answer to question 4??</p>
+            <h4>Who has made the most three-point shots in Bulls franchise history?</h4>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios13" value="option13" checked>
+            <input class="form-check-input" type="radio" name="fourthAnswerGroup" id="exampleRadios13" value="Toni Kukoc" checked>
             <label class="form-check-label" for="exampleRadios13">
-                Correct answer Number 4
+                Toni Kukoc
             </label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios14" value="option14">
+            <input class="form-check-input" type="radio" name="fourthAnswerGroup" id="exampleRadios14" value="Kirk Hinrich">
             <label class="form-check-label" for="exampleRadios14">
-                Incorrect answer
+                Kirk Hinrich
             </label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios15" value="option15" checked>
+            <input class="form-check-input" type="radio" name="fourthAnswerGroup" id="exampleRadios15" value="Steve Kerr" checked>
             <label class="form-check-label" for="exampleRadios15">
-                Incorrect answer 2
+                Steve Kerr
             </label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios16" value="option16">
+            <input class="form-check-input" type="radio" name="fourthAnswerGroup" id="exampleRadios16" value="Scott Pippen">
             <label class="form-check-label" for="exampleRadios16">
-                Incorrect answer 3
+                Scott Pippen
             </label>
         </div>
         <button class="col" id="submitFourthAnswer">Next</button>
     </div>
 
+    <!--Fourth Question Correct Screen-->
+    <div class="gameScreen container hidden" id="questionFourCorrect" data-state="hidden">
+        <img src="./assets/images/JoakimNoahKirk.gif">
+        <div>Swish! Nice job!</div>
+        <button class="col goToFifthQuestion">Next</button>
+    </div>
+
+    <!--Fourth Question Correct Screen-->
+    <div class="gameScreen container hidden" id="questionFourIncorrect" data-state="hidden">
+        <img src="./assets/images/cryingjordan.jpeg">
+        <div>That is incorrect! The correct answer is: Kirk Hinrich</div>
+        <button class="col goToFifthQuestion">Next</button>
+    </div>
+
     <!--Fifth Question-->
     <div class="gameScreen container hidden" id="question5" data-state="hidden">
-        <img src="assets/images/Bulls.jpeg" class="imageStyles col">
+        <img src="assets/images/1966bulls.jpeg" class="imageStyles col">
+        <div>Time Remaining: </div>
+        <div id="fifthQuestionTimeRemaining">15</div>
         <div class="col">
-            <p>What is the answer to question 5??</p>
+            <h4>What year were the bulls founded?
+            </h4>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios17" value="option17" checked>
+            <input class="form-check-input" type="radio" name="fifthAnswerGroup" id="exampleRadios17" value="1975" checked>
             <label class="form-check-label" for="exampleRadios17">
-                Correct answer Number 5
+                1975
             </label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios18" value="option18">
+            <input class="form-check-input" type="radio" name="fifthAnswerGroup" id="exampleRadios18" value="1966">
             <label class="form-check-label" for="exampleRadios18">
-                Incorrect answer
+                1966
             </label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios19" value="option19" checked>
+            <input class="form-check-input" type="radio" name="fifthAnswerGroup" id="exampleRadios19" value="1968" checked>
             <label class="form-check-label" for="exampleRadios19">
-                Incorrect answer 2
+                1968
             </label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios20" value="option20">
+            <input class="form-check-input" type="radio" name="fifthAnswerGroup" id="exampleRadios20" value="1963">
             <label class="form-check-label" for="exampleRadios20">
-                Incorrect answer 3
+                1963
             </label>
         </div>
         <button class="col" id="submitFifthAnswer">Next</button>
+    </div>
+
+    <!--Fifth Question Correct Screen-->
+    <div class="gameScreen container hidden" id="questionFiveCorrect" data-state="hidden">
+        <img src="https://media.giphy.com/media/qInSwFTd4G3qo/giphy.gif">
+        <div>You've been a fan since the start!</div>
+        <button class="col goToSixthQuestion">Next</button>
+    </div>
+
+    <!--Fifth Question Incorrect Screen-->
+    <div class="gameScreen container hidden" id="questionFiveIncorrect" data-state="hidden">
+        <img src="./assets/images/cryingjordan.jpeg">
+        <div>That is incorrect! The correct answer is: 1966</div>
+        <button class="col goToSixthQuestion">Next</button>
+    </div>
+
+    <!--Sixth Question-->
+    <div class="gameScreen container hidden" id="question6" data-state="hidden">
+        <img src="assets/images/thumb.jpeg" class="imageStyles col">
+        <div>Time Remaining: </div>
+        <div id="sixthQuestionTimeRemaining">15</div>
+        <div class="col">
+            <h4>Who was the first Bulls player to have their number retired?
+            </h4>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="sixthAnswerGroup" id="exampleRadios21" value="Bob Love" checked>
+            <label class="form-check-label" for="exampleRadios21">
+                Bob Love
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="sixthAnswerGroup" id="exampleRadios22" value="Norm Van Lier">
+            <label class="form-check-label" for="exampleRadios22">
+                Norm Van Lier
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="sixthAnswerGroup" id="exampleRadios22" value="Artis Gilmore" checked>
+            <label class="form-check-label" for="exampleRadios22">
+                Artis Gilmore
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="sixthAnswerGroup" id="exampleRadios23" value="Jerry Sloan">
+            <label class="form-check-label" for="exampleRadios23">
+                Jerry Sloan
+            </label>
+        </div>
+        <button class="col" id="submitSixthAnswer">Next</button>
+    </div>
+
+    <!--Sixth Question Correct Screen-->
+    <div class="gameScreen container hidden" id="questionSixCorrect" data-state="hidden">
+        <img src="assets/images/allretirednumbers.jpeg">
+        <div>Jerry Sloan had his number retired on February 17th, 1978 in the old Chicago Stadium. His was the first number to
+            hang in the rafters.</div>
+        <button class="col goToSeventhQuestion">Next</button>
+    </div>
+
+    <!--Sixth Question Incorrect Screen-->
+    <div class="gameScreen container hidden" id="questionSixIncorrect" data-state="hidden">
+        <img src="./assets/images/cryingjordan.jpeg"> That is incorrect!
+        <div>The correct answer is: Jerry Sloan</div>
+        <button class="col goToSeventhQuestion">Next</button>
+    </div>
+
+
+    <!--Seventh Question-->
+    <div class="gameScreen container hidden" id="question7" data-state="hidden">
+        <img src="assets/images/mjcigar.jpeg" class="imageStyles col">
+        <div>Time Remaining: </div>
+        <div id="seventhQuestionTimeRemaining">15</div>
+        <div class="col">
+            <h4>After Michael Jordan retired, an NBA team other than the Bulls decided to also retire the number 23 in respect
+                to Michael, dispite the fact that Michael never played for that franchize. Which franchise was this?
+            </h4>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="seventhAnswerGroup" id="exampleRadios25" value="Miami Heat" checked>
+            <label class="form-check-label" for="exampleRadios25">
+                Miami Heat
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="seventhAnswerGroup" id="exampleRadios26" value="Utah Jazz">
+            <label class="form-check-label" for="exampleRadios26">
+                Utah Jazz
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="seventhAnswerGroup" id="exampleRadios27" value="Los Angeles Lakers" checked>
+            <label class="form-check-label" for="exampleRadios27">
+                Los Angeles Lakers
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="seventhAnswerGroup" id="exampleRadios28" value="Detroit Pistons">
+            <label class="form-check-label" for="exampleRadios28">
+                Detroit Pistons
+            </label>
+        </div>
+        <button class="col" id="submitSeventhAnswer">Next</button>
+    </div>
+
+    <!--Seventh Question Correct Screen-->
+    <div class="gameScreen container hidden" id="questionSevenCorrect" data-state="hidden">
+        <img src="./assets/images/lbj.jpeg">
+        <div>Correct! Because the Miami Heat also retired the number 23, Lebron James had to wear the number 6 while he was a
+            member of the Heat. Lebron wore number 23 on the Cavaliers and currently wears 23 for the Lakers.</div>
+        <button class="col goToEndScreen">Next</button>
+    </div>
+
+    <!--Seventh Question Incorrect Screen-->
+    <div class="gameScreen container hidden" id="questionSevenIncorrect" data-state="hidden">
+        <img src="./assets/images/cryingjordan.jpeg">
+        <div>That is incorrect! The correct answer is: The Miami Heat</div>
+        <button class="col goToEndScreen">Next</button>
+    </div>
+
+
+
+
+    <!--End Screen-->
+    <div class="gameScreen container hidden" id="endScreen" data-state="hidden">
+        <img src="https://media.giphy.com/media/VnE5uH5fbbfLG/giphy.gif" class="imageStyles col">
+        <div>Total Correct Answers: </div>
+        <div class="correctAnswers">0</div>
+        <div>Total Incorrect Answers:</div>
+        <div class="incorrectAnswers">0</div>
+        <button class="col" id="restartGame">Restart</button>
     </div>
 
     <!--Jquery and Javascript links:-->
